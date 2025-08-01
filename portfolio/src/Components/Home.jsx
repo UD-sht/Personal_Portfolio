@@ -52,13 +52,14 @@ const Home = () => {
                             <div className="absolute -top-6 -right-6 w-20 h-20 bg-blue-100 rounded-full opacity-60 -z-10"></div>
                             <div className="absolute -bottom-10 -left-10 w-32 h-32 bg-blue-100 rounded-full opacity-40 -z-10"></div>
 
-                            {/* Main Gradient Circle */}
-                            <div className="w-80 h-80 bg-gradient-to-br from-blue-100 to-blue-200 rounded-full flex items-center justify-center shadow-xl overflow-hidden relative">
-                                <img
-                                    src={ud}
-                                    alt="Udhay Shrestha"
-                                    className="w-64 h-64 rounded-full object-cover"
-                                />
+                            <div className="w-72 h-72 sm:w-80 sm:h-80 bg-gradient-to-br from-blue-100 to-blue-200 rounded-full flex items-center justify-center shadow-xl overflow-hidden relative">
+                                <div className="w-60 h-60 sm:w-64 sm:h-64 rounded-full overflow-hidden border-4 border-white shadow-md">
+                                    <img
+                                        src={ud}
+                                        alt="Uday Shrestha"
+                                        className="w-full h-full object-cover"
+                                    />
+                                </div>
                             </div>
                         </div>
                     </div>

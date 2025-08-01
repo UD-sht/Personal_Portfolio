@@ -1,6 +1,6 @@
 const heroText = {
         heading: "Hi, I'm",
-        name: 'Udhay Shrestha',
+        name: 'Uday Shrestha',
         subheading: 'Laravel Developer & Backend Specialist',
         description:
             'Passionate about building scalable web applications with clean, maintainable code. Specialized in Laravel framework with 5+ years of experience in modern PHP development.',
