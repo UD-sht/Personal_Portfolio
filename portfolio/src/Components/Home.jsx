@@ -2,9 +2,10 @@ import React from 'react';
 import { IoIosMail } from 'react-icons/io';
 import { PiSuitcaseSimple } from 'react-icons/pi';
 import { heroText } from '../Datas/HomeData.js'
+import { ud } from '../Images/image.js';
 
 const Home = () => {
-    
+
     return (
         <>
             <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 ">
@@ -47,18 +48,21 @@ const Home = () => {
                     {/* Right Content - Avatar/Image Area */}
                     <div className="flex justify-center lg:justify-end">
                         <div className="relative">
-                            {/* Main Circle */}
-                            <div className="w-80 h-80 bg-gradient-to-br from-blue-100 to-blue-200 rounded-full flex items-center justify-center relative overflow-hidden">
-                                <div className="w-64 h-64 bg-white rounded-full flex items-center justify-center shadow-lg">
+                            {/* Decorative Background Circles */}
+                            <div className="absolute -top-6 -right-6 w-20 h-20 bg-blue-100 rounded-full opacity-60 -z-10"></div>
+                            <div className="absolute -bottom-10 -left-10 w-32 h-32 bg-blue-100 rounded-full opacity-40 -z-10"></div>
 
-                                </div>
+                            {/* Main Gradient Circle */}
+                            <div className="w-80 h-80 bg-gradient-to-br from-blue-100 to-blue-200 rounded-full flex items-center justify-center shadow-xl overflow-hidden relative">
+                                <img
+                                    src={ud}
+                                    alt="Udhay Shrestha"
+                                    className="w-64 h-64 rounded-full object-cover"
+                                />
                             </div>
-
-                            {/* Background Decorative Circles */}
-                            <div className="absolute -top-4 -right-4 w-20 h-20 bg-blue-300 rounded-full opacity-60 -z-10"></div>
-                            <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-blue-100 rounded-full opacity-40 -z-10"></div>
                         </div>
                     </div>
+
                 </div>
             </main>
         </>
